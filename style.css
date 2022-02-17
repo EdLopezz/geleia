@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai&family=Balsamiq+Sans&family=Bangers&family=PT+Sans+Caption&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background: linear-gradient( 20deg, #311B4C,#571279,#9D50D8 75% );
+}
+
+#cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo_gb{
+    height: 120px;
+}
+.navbar{
+    display: flex;
+    gap: 15px;
+    font-family: 'PT Sans Caption', sans-serif;
+    
+}
+.navbar a{
+    color: #311B4C;
+}
+
+.navbar a:hover{
+    color: aliceblue;
+    text-decoration: underline;
+}
+/*Conteudo*/
+.conteudo{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border-top: 1px solid white;
+    padding-top: 5%;
+}
+
+.conteudo_principal{
+    width: 300px;
+}
+
+.conteudo_principal h1{
+    font-family: 'Almarai', sans-serif;
+    font-weight:900;
+    font-size: 2.5em;
+}
+
+.conteudo_principal h2{
+    font-family: 'PT Sans Caption', sans-serif;
+    text-align: justify;
+    font-size:1em ;
+}
+/*Conteudo idvs(img/txt)*/
+
+.bloco1{
+    display: flex;
+    padding-top: 50px;
+    gap: 15px;
+    justify-content: space-around;
+    text-align: center;
+
+}
+.bloco2{
+    display: flex;
+    margin-top: 25px;
+    border-top: 1px solid white;
+    padding: 25px;
+    gap: 15px;
+    justify-content: space-around;
+    text-align: center;
+}
+.foto_integrantes{
+    height: 100px;
+    border-radius: 150px;
+}
+
+.conteudo_principal-integrantes p {
+    font-size: 13px;
+    color: aliceblue;
+
+}
+
+/*Conteudo Secundario */
+
+.conteudo_secundario{
+    background-color: #dcaeff;
+    width: 30%;
+    border-radius: 15px ;
+    padding: 20px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.conteudo_secundario h3{
+    font-family: 'Almarai', sans-serif;
+    font-weight:900;
+    font-size: 2em;
+    text-align: center;
+}
+
+.conteudo_secundario a{
+    margin: 0 15px;
+}
+.conteudo_secundario-divs{
+    display: flex;
+    background-color: #00AE17;
+    color: aliceblue;
+    border-radius: 15px;
+    height: 50px;
+    padding: 5px;
+    font-family: 'PT Sans Caption', sans-serif;
+    text-align: justify;
+    font-size:1em ;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+    .cast2{
+    background-color:#FF6C34 ;
+    }
+    .cast3{
+        background-color:#fd1616 ;
+    }
+    .cast4{
+        background-color: #0a19eb;
+        height: 25%;
+    }
+.conteudo_secundario img{
+    height: 25px;
+}
+
+/*Conteudo terciairo*/
+
+
+
+.conteudo_terciario{
+    width: 90%;
+    margin: 50px auto;
+    font-family: 'PT Sans Caption', sans-serif;
+    text-align: justify;
+    font-size:1em ;
+    background-color: #dcaeff;
+    padding: 15px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.conteudo_terciario-texto h2{
+    text-align: center;
+}
+/*Footer*/
+
+footer{
+    margin: 50px;
+}
+
+footer p{
+    text-align: center;
+    height: 100px;
+    line-height:100px;
+    color: antiquewhite;
+    border-top: 1px solid white;
+    
+}
+
+ @media (max-width: 600px){
+
+    body{
+        background: linear-gradient( 20deg, #311B4C,#571279,#9D50D8 70% );
+    }
+    /*Cabeçalho*/
+    #cabecalho{
+        display: block;
+        text-align: center;
+    }
+
+    .logo_gb{
+        height: 100px;
+    }
+
+    .navbar{
+        display: block;
+        margin: auto;
+        margin: 10px 0;
+    }
+
+    .navbar a{
+        padding: 5px;
+    }
+
+    /*conteudo*/
+    .conteudo{
+        flex-wrap: wrap;
+    }
+
+    .conteudo_secundario{
+        width: 80%;
+        height: 100%;
+        margin: 50px auto;
+    }
+
+    .conteudo_terciario{
+        width: 100%;
+    }
+}
